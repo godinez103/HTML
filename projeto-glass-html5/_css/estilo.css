@@ -1,0 +1,268 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans|Titillium|Lato:100+Web);
+@font-face{
+	font-family:'fonteLogo';
+	src: url("../_fonts/computer-font.ttf");
+}
+@font-face{
+	font-family:'fonteLogo2';
+	src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+body{
+	background-color:#dddddd;
+	color:rgba(0,0,0,1);
+	font-family:Arial, sans-serif;
+}
+
+div#interface{
+	width:900px;
+	background-color:#ffffff;
+	margin:-20px auto 0px auto;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+	/* margem interna */padding: 10px 10px 10px 10px;
+}
+
+p {
+	text-align:justify;
+	/* paragrafo */text-indent:50px;
+}
+
+a{
+	color:#606060;
+	text-decoration:none;
+}
+
+a:hover{
+	text-decoration:underline;
+	color:#000000;
+}
+
+header#cabecalho img#icone{
+	position: absolute;
+	left:745px;
+	top:55px;
+}
+
+header#cabecalho {
+	border-bottom: 1px #606060 solid;
+	height:210px;
+	background: url("../_imagens/glass-logo-peq.jpg") no repeat 0px 80px
+}
+
+header#cabecalho h1{
+	font-family:'fonteLogo',sans-serif;
+	font-size: 30pt;
+	color:#606060;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+	padding:0px;
+	margin-botton:0px;
+}
+
+header#cabecalho h2{
+	font-family: 'Titillium Web', sans-serif;
+	color:#888888;
+	font-size:15pt;
+	padding: 0px;
+	margin-top:0px;
+}
+
+header#cabecalho h3{
+	font-family: 'Lato', sans-serif;
+	font-size:70px;
+	color:#454545;
+	padding:0px;
+	margin-top:0px;
+}
+	
+/*Formatação de imagem com legenda*/
+
+figure.foto-legenda{
+	position:relative;
+	border: 8px solid white;
+	box-shadow: 1px 1px 1px black;
+}
+
+figure.foto-legenda img{
+	width: 100%;
+	height:100%;
+}
+
+figure.foto-legenda figcaption{
+	position: absolute;
+	top:0px;
+	background-color: rgba(0,0,0,.4);
+	color: white;
+	width:100%;
+	height:100%;
+	padding:10px;
+	box-sizing: border-box;
+	opacity: 0;
+	transition: opacity 2s;
+}
+
+figure.foto-legenda:hover figcaption{
+	opacity:1;
+}
+
+/*Formatação do menu*/
+
+nav#menu{
+	display:block;
+}
+
+nav#menu ul{
+	list-style:none;
+	text-transform:uppercase;
+	position:absolute;
+	top:-20px;
+	left:300px;
+}
+
+nav#menu li{
+	display:inline-block;
+	background:#dddddd;
+	padding:10px;
+	margin:2px;
+	transition: background-color 1s;
+}
+
+nav#menu li:hover{
+	background-color:#606060;
+}
+
+nav#menu h1{
+	display:none;
+}
+
+nav#menu a{
+	color:#000000;
+	text-decoration:none;
+}
+
+nav#menu a:hover{
+	color:#ffffff;
+	text-decoration:underline;
+}
+
+section#corpo {
+	display:block;
+	width:500px;
+	float:left;
+	border-right: 1px solid #606060;
+	padding-right: 10px;
+}
+
+article#noticiaPrincipal h2{
+	font-size:13pt;
+	color:#606060;
+	background-color:#dddddd;
+	padding:5px 10px 5px 10px;
+	margin:10px 0px 10px 0px;
+}
+
+header#cabecalhoArtigo h1{
+	font-family:'fonteLogo',sans-serif;
+	font-size:20pt;
+	color:#606060;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+header#cabecalhoArtigo h2{
+	font-size:13pt;
+	color:#cecece;
+	background-color:#ffffff;
+}
+
+header#cabecalhoArtigo h3{
+	font-size:12pt;
+	color:#606060;
+}
+
+.direita{
+	text-align:right;
+}
+
+table#tabelaSpec {
+	border: 1px solid #606060;
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table#tabelaSpec td{
+	border: 1px solid #606060;	
+	padding: 10px;
+}
+
+table#tabelaSpec td.ce{
+	text-align: center;
+	color:#ffffff;
+	background-color:#606060;
+}
+
+table#tabelaSpec td.cd{
+	text-align: left;
+	background-color:#cecece;
+}
+
+table#tabelaSpec caption{
+	color:#888888;
+	font-size:12pt;
+	font-weight:bolder;
+}
+
+table#tabelaSpec caption span{
+	display:block;
+	float:right;
+	color:#000000;
+	font-size:8pt;
+	margin-top:10px;
+}
+
+aside#lateral {
+	display:block;
+	width:350px;
+	float:right;
+	padding: 10px;
+	background-color:#dddddd;
+	margin-top:10px;
+	box-shadow:2px 2px 2px rgba(0,0,0,.5);
+}
+
+aside#lateral h1{
+	font-family:'fonteLogo',sans-serif;
+	font-size;20pt;
+	color:#606060;
+	margin-top:0px;
+}
+
+aside#lateral h2{
+	font-size:13pt;
+	background-color:#606060;
+	color:#ffffff
+	padding: 10px;
+}
+
+footer#rodape {
+	border-top: 1px solid #606060;
+	padding-top:7px;
+	clear: both;
+	display:block;
+	width:100%;	
+}
+
+footer#rodape p{
+	text-align:center;
+}
+
+footer#rodape a{
+	color:black;
+	text-decoration:none;
+}
+
+footer#rodape a:hover{
+	text-decoration:underline;
+	color:red;
+	transition:1s;
+}
